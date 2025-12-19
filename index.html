@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game - Checkmate Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>♔ Chess Game ♔</h1>
+            <div class="game-info">
+                <div class="turn-indicator">
+                    <span id="current-turn">White's Turn</span>
+                </div>
+                <div class="status-message" id="status-message"></div>
+            </div>
+        </div>
+        
+        <div class="board-container">
+            <div class="coordinates coordinates-top">
+                <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+            </div>
+            <div class="board-wrapper">
+                <div class="coordinates coordinates-left">
+                    <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+                </div>
+                <div id="chessboard" class="chessboard"></div>
+                <div class="coordinates coordinates-right">
+                    <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+                </div>
+            </div>
+            <div class="coordinates coordinates-bottom">
+                <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="reset-btn" class="btn">New Game</button>
+            <button id="undo-btn" class="btn">Undo Move</button>
+        </div>
+        
+        <div class="captured-pieces">
+            <div class="captured-section">
+                <h3>Captured White Pieces</h3>
+                <div id="captured-white" class="captured-list"></div>
+            </div>
+            <div class="captured-section">
+                <h3>Captured Black Pieces</h3>
+                <div id="captured-black" class="captured-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chess.js"></script>
+</body>
+</html>
+
